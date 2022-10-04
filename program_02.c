@@ -1,3 +1,15 @@
+/*
+
+Program Name :Get Input & Output From User
+
+Date & Time : 4 - 10 - 2022
+
+Author : Vaibhav Jadhav
+
+*/
+
+/* program start */
+
 #include <stdio.h>
 
 /* main method */
@@ -5,7 +17,7 @@ int main()
 {
     /* dataTypes & variables */
 
-    int n1, n2, add, sub, multi, div;
+    int n1, n2, result;
 
     /* input */
 
@@ -15,19 +27,24 @@ int main()
     printf("enter the second num :");
     scanf("%d", &n2);
 
-    /* process */
+    /* process & Output */
+    // Add
+    result = n1 + n2;
+    printf("add of two number is :%d\n", result);
+    // Sub
+    result = n1 - n2;
+    printf("sub of two number is :%d\n", result);
 
-    add = n1 + n2;
-    sub = n1 - n2;
-    multi = n1 * n2;
-    div = n1 / n2;
+    // Multi
+    result = n1 * n2;
+    printf("multi of two number is :%d\n", result);
 
-    /* output*/
+    // Div
+    result = n1 / n2;
+    printf("div of two number is :%d\n", result);
 
-    printf("add of two number is :%d\n", add);
-    printf("sub of two number is :%d\n", sub);
-    printf("multi of two number is :%d\n", multi);
-    printf("div of two number is :%d\n", div);
-
+    /* Program Stop */
     return 0;
+
+    /* program end */
 }
